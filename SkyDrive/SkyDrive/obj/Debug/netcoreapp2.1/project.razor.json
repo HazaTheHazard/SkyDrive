@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\HKE07\\Projects\\SkyDrive\\SkyDrive\\SkyDrive\\SkyDrive.csproj",
+  "TargetFramework": "netcoreapp2.1",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "MVC-2.1",
+    "LanguageVersion": "2.1",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-2.1"
+      }
+    ]
+  }
+}
