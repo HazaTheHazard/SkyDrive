@@ -12,7 +12,7 @@ namespace SkyDrive.Pages
 
         public void OnGet()
         {
-            Message = "Your application description page.";
+            Message = "My Web App";
         }
     }
 }
