@@ -1,12 +1,12 @@
-﻿using ContosoUniversity.Models.SchoolViewModels;
+﻿using SkyDrive.Models.SchoolViewModels;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ContosoUniversity.Models;
+using SkyDrive.Models;
 
-namespace ContosoUniversity.Pages
+namespace SkyDrive.Pages
 {
     public class AboutModel : PageModel
     {

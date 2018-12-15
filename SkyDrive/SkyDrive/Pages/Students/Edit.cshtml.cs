@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using ContosoUniversity.Models;
+using SkyDrive.Models;
 
-namespace ContosoUniversity.Pages.Students
+namespace SkyDrive.Pages.Students
 {
     public class EditModel : PageModel
     {

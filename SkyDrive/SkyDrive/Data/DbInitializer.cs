@@ -2,9 +2,9 @@ using System;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using ContosoUniversity.Models;
+using SkyDrive.Models;
 
-namespace ContosoUniversity.Data
+namespace SkyDrive.Data
 {
     public static class DbInitializer
     {

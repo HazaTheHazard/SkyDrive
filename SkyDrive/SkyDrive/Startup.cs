@@ -9,9 +9,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using ContosoUniversity.Models;
+using SkyDrive.Models;
 
-namespace ContosoUniversity
+namespace SkyDrive
 {
     public class Startup
     {

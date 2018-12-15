@@ -1,7 +1,7 @@
-﻿using ContosoUniversity.Models;
+﻿using SkyDrive.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace ContosoUniversity.Models
+namespace SkyDrive.Models
 {
     public class SkyDriveContext : DbContext
     {

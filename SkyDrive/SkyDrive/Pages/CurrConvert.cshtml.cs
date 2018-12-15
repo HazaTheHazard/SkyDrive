@@ -1,7 +1,7 @@
 using System;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace ContosoUniversity.Pages
+namespace SkyDrive.Pages
 {
     public class CurrConvert : PageModel
     {

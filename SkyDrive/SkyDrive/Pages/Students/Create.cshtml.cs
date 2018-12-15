@@ -5,15 +5,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using ContosoUniversity.Models;
+using SkyDrive.Models;
 
-namespace ContosoUniversity.Pages.Students
+namespace SkyDrive.Pages.Students
 {
     public class CreateModel : PageModel
     {
-        private readonly ContosoUniversity.Models.SkyDriveContext _context;
+        private readonly SkyDrive.Models.SkyDriveContext _context;
 
-        public CreateModel(ContosoUniversity.Models.SkyDriveContext context)
+        public CreateModel(SkyDrive.Models.SkyDriveContext context)
         {
             _context = context;
         }
