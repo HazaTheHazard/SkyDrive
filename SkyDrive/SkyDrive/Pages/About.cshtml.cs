@@ -1,18 +1,36 @@
-﻿using System;
+﻿using ContosoUniversity.Models.SchoolViewModels;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+using ContosoUniversity.Models;
 
-namespace SkyDrive.Pages
+namespace ContosoUniversity.Pages
 {
     public class AboutModel : PageModel
     {
-        public string Message { get; set; }
+        private readonly SkyDriveContext _context;
 
-        public void OnGet()
+        public AboutModel(SkyDriveContext context)
         {
-            Message = "My Web App";
+            _context = context;
+        }
+
+        public IList<EnrollmentDateGroup> Student { get; set; }
+
+        public async Task OnGetAsync()
+        {
+            IQueryable<EnrollmentDateGroup> data =
+                from student in _context.Student
+                group student by student.EnrollmentDate into dateGroup
+                select new EnrollmentDateGroup()
+                {
+                    EnrollmentDate = dateGroup.Key,
+                    StudentCount = dateGroup.Count()
+                };
+
+            Student = await data.AsNoTracking().ToListAsync();
         }
     }
 }
