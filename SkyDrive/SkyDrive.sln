@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.28307.106
+VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyDrive", "SkyDrive\SkyDrive.csproj", "{7DCF662D-4E9A-4F76-8C2C-96065544FCAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkyDrive", "SkyDrive.csproj", "{0C1E80B3-6AB2-4BBD-91BD-0634F9727DFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7DCF662D-4E9A-4F76-8C2C-96065544FCAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7DCF662D-4E9A-4F76-8C2C-96065544FCAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7DCF662D-4E9A-4F76-8C2C-96065544FCAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7DCF662D-4E9A-4F76-8C2C-96065544FCAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C1E80B3-6AB2-4BBD-91BD-0634F9727DFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C1E80B3-6AB2-4BBD-91BD-0634F9727DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C1E80B3-6AB2-4BBD-91BD-0634F9727DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C1E80B3-6AB2-4BBD-91BD-0634F9727DFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {515890DC-1FF3-4A5D-AA6B-9E2CCA62C06A}
+		SolutionGuid = {1E041370-262B-489B-8EF8-5EFC2AD6C4F0}
 	EndGlobalSection
 EndGlobal
