@@ -15,13 +15,15 @@ namespace SkyDrive.Data
             // Look for any students.
             if (context.Student.Any())
             {
-                return;   // DB has been seeded
+              return;   // DB has been seeded
             }
 
             var students = new Student[]
             {
-                new Student { FirstMidName = "Carson",   LastName = "Alexander",
-                    EnrollmentDate = DateTime.Parse("2010-09-01") },
+                new Student {
+                    FirstMidName = "Carson",   LastName = "Alexander",
+                    EnrollmentDate = DateTime.Parse("2010-09-01")
+                },
                 new Student { FirstMidName = "Meredith", LastName = "Alonso",
                     EnrollmentDate = DateTime.Parse("2012-09-01") },
                 new Student { FirstMidName = "Arturo",   LastName = "Anand",
@@ -129,6 +131,28 @@ namespace SkyDrive.Data
                     InstructorID = instructors.Single( i => i.LastName == "Kapoor").ID,
                     Location = "Thompson 304" },
             };
+
+            var auth = new Auth[]
+            {
+                new Auth
+                {
+                    Email = "matthew.king4@sky.uk",
+                    Password = "abcd1234",
+                    FullName = "Matt King"
+                },
+                new Auth
+                {
+                    Email = "test@sky.uk",
+                    Password = "test1234",
+                    FullName = "test"
+                }
+            };
+
+            foreach (Auth a in auth)
+            {
+                context.Auth.Add(a);
+            }
+            context.SaveChanges();
 
             foreach (OfficeAssignment o in officeAssignments)
             {

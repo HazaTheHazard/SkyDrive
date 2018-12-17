@@ -4,11 +4,20 @@
     ViewData["Title"] = "Home page";
 }
 
+@if (User.Identity.IsAuthenticated)
+{
+    <div class="row">
+        <div class="col-md-12">
+            <div class="welcome">Hello @User.Claims.FirstOrDefault(c => c.Type == "FullName")?.Value!</div>
+            <p>Username: @User.Identity.Name</p>
+        </div>
+    </div>
+}
+else
+{
 <div class="row">
     <div class="col-md-offset-4">
         <h2>Welcome to Sky Drive</h2>
-        <p>
-            Please enter your Sky login credentials below
-        </p>
     </div>
 </div>
+}

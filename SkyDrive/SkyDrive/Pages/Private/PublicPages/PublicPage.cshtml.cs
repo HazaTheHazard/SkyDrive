@@ -5,15 +5,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace SkyDrive.Pages
+namespace SkyDrive.Pages.Private.Public
 {
-    public class ContactModel : PageModel
+    public class PublicPageModel : PageModel
     {
         public string Message { get; private set; }
 
         public void OnGet()
         {
-            Message = "Your contact page.";
+            Message = "A public page inside a PublicPages folder inside the Private folder.";
         }
     }
 }
