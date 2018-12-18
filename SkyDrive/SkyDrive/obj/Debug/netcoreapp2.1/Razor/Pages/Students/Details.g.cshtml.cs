@@ -167,7 +167,7 @@ using SkyDrive;
             WriteLiteral("            </table>\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(1554, 62, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b117c4dbc81f4a8db981451ba8b11e11", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "de8d8b6a331a4deda1dd8fa41ef88633", async() => {
                 BeginContext(1608, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -202,7 +202,7 @@ using SkyDrive;
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(1624, 38, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e89dff329f35464d82954e6098f57908", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d8f51a3fc768443cb7beb212debc7030", async() => {
                 BeginContext(1646, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();

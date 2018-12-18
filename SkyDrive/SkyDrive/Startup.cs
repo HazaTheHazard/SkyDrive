@@ -36,8 +36,6 @@ namespace SkyDrive
                 {
                     options.Conventions.AuthorizePage("/Contact");
                     options.Conventions.AuthorizeFolder("/Private");
-                    options.Conventions.AllowAnonymousToPage("/Private/PublicPage");
-                    options.Conventions.AllowAnonymousToFolder("/Private/PublicPages");
                 })
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 

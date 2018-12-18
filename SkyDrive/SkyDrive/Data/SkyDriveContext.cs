@@ -16,6 +16,7 @@ namespace SkyDrive.Models
         public DbSet<Instructor> Instructors { get; set; }
         public DbSet<OfficeAssignment> OfficeAssignments { get; set; }
         public DbSet<Auth> Auth { get; set; }
+        public DbSet<Note> Note { get; set; }
 
         public DbSet<CourseAssignment> CourseAssignments { get; set; }
 

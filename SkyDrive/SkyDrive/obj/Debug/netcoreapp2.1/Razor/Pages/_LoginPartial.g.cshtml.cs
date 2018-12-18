@@ -62,7 +62,7 @@ using SkyDrive;
             WriteLiteral("    ");
             EndContext();
             BeginContext(42, 311, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "29c1ce3741f1474b9f21fa4700d9e1a1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e8b3ecb444a8410d82dea3f59f7bf272", async() => {
                 BeginContext(144, 202, true);
                 WriteLiteral("\n        <ul class=\"nav navbar-nav navbar-right\">\n            <li>\n                <button type=\"submit\" class=\"btn btn-link navbar-btn navbar-link\">Log out</button>\n            </li>\n        </ul>\n    ");
                 EndContext();
@@ -102,7 +102,7 @@ else
             WriteLiteral("    <ul class=\"nav navbar-nav navbar-right\">\n        <li>");
             EndContext();
             BeginContext(420, 39, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "44fbcc3340354d9b97827bf39959819a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "469cc7cb69bb4fa0bb63d9f56cb5ae66", async() => {
                 BeginContext(449, 6, true);
                 WriteLiteral("Log in");
                 EndContext();

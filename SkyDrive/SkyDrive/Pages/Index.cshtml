@@ -10,6 +10,7 @@
         <div class="col-md-12">
             <div class="welcome">Hello @User.Claims.FirstOrDefault(c => c.Type == "FullName")?.Value!</div>
             <p>Username: @User.Identity.Name</p>
+            <!--To check userID <p>Hello @User.Claims.FirstOrDefault(c => c.Type == "UserID")?.Value</p>-->
         </div>
     </div>
 }

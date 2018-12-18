@@ -1,8 +1,3 @@
-C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\SkyDrive.csproj.CoreCompileInputs.cache
-C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\SkyDrive.RazorAssemblyInfo.cache
-C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\SkyDrive.RazorAssemblyInfo.cs
-C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\SkyDrive.AssemblyInfoInputs.cache
-C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\SkyDrive.AssemblyInfo.cs
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\bin\Debug\netcoreapp2.1\SkyDrive.deps.json
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\bin\Debug\netcoreapp2.1\SkyDrive.runtimeconfig.json
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\bin\Debug\netcoreapp2.1\SkyDrive.runtimeconfig.dev.json
@@ -10,6 +5,11 @@ C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\bin\Debug\netcoreapp
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\bin\Debug\netcoreapp2.1\SkyDrive.pdb
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\bin\Debug\netcoreapp2.1\SkyDrive.Views.dll
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\bin\Debug\netcoreapp2.1\SkyDrive.Views.pdb
+C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\SkyDrive.csproj.CoreCompileInputs.cache
+C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\SkyDrive.RazorAssemblyInfo.cache
+C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\SkyDrive.RazorAssemblyInfo.cs
+C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\SkyDrive.AssemblyInfoInputs.cache
+C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\SkyDrive.AssemblyInfo.cs
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\SkyDrive.TagHelpers.input.cache
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\SkyDrive.TagHelpers.output.cache
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\SkyDrive.RazorCoreGenerate.cache
@@ -21,6 +21,9 @@ C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Error.g.cshtml.cs
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Index.g.cshtml.cs
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Privacy.g.cshtml.cs
+C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Private\Notes.g.cshtml.cs
+C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Private\PublicPage.g.cshtml.cs
+C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Private\_ViewImports.g.cshtml.cs
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_CookieConsentPartial.g.cshtml.cs
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_Layout.g.cshtml.cs
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_ValidationScriptsPartial.g.cshtml.cs
@@ -39,8 +42,3 @@ C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\SkyDrive.pdb
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\SkyDrive.csproj.CopyComplete
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\SkyDrive.csprojAssemblyReference.cache
-C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Private\PrivatePage1.g.cshtml.cs
-C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Private\PublicPage.g.cshtml.cs
-C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Private\PublicPages\PublicPage.g.cshtml.cs
-C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Private\PublicPages\_ViewImports.g.cshtml.cs
-C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Private\_ViewImports.g.cshtml.cs

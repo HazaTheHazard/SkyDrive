@@ -76,6 +76,7 @@ namespace SkyDrive.Pages.Account
                 var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, user.Email),
+                    new Claim("UserID", user.ID.ToString()),
                     new Claim("FullName", user.FullName)
                 };
 
@@ -109,6 +110,7 @@ namespace SkyDrive.Pages.Account
                 {
                     Email = userProfile.Email,
                     FullName = userProfile.FullName,
+                    ID = userProfile.ID
                  };
             }
         }
