@@ -1,0 +1,31 @@
+﻿@page
+@namespace SkyDrive.Pages.Private
+@model NotesModel
+@{
+    ViewData["Title"] = "Notes";
+}
+<h1>@ViewData["Title"]</h1>
+<h2>@Model.Message</h2>
+
+@foreach (var item in Model.Notes)
+{
+    <form method="post" style="display: inline">
+        <input type="hidden" value="@item.ID" name="id" />
+        <input class="btn btn-default" type="submit" value="@item.Title" />
+    </form>
+    }
+@if(Model.ActiveNote != null)
+{
+    <div class="jumbotron">
+        <h2 class="display-4 text-center">
+            @Model.ActiveNote.Title
+        </h2>
+        <hr>
+        <p>@Model.ActiveNote.Body</p>
+    </div>
+}
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -34,8 +34,7 @@ namespace SkyDrive
             services.AddMvc()
                 .AddRazorPagesOptions(options =>
                 {
-                    options.Conventions.AuthorizePage("/Contact");
-                    options.Conventions.AuthorizeFolder("/Private");
+                    options.Conventions.AuthorizePage("/Notes");
                 })
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 

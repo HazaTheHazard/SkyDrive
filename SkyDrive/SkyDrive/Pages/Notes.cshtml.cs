@@ -16,13 +16,12 @@ namespace SkyDrive.Pages.Private
 
         public List<Note> Notes { get; private set; }
 
-        public String ActiveNote { get; set; }
+        public Note ActiveNote { get; set; }
 
         private readonly SkyDrive.Models.SkyDriveContext _context;
 
         public NotesModel(SkyDrive.Models.SkyDriveContext context)
         {
-            Message = "Welcome to your notes.";
             _context = context;
         }
 
@@ -30,19 +29,20 @@ namespace SkyDrive.Pages.Private
         {
             var UserNotes = await FetchNotesByUserID();
             Notes = UserNotes;
-            ActiveNote = Notes[id - 1].Body;
+            ActiveNote = Notes[id - 1];
         }
 
         public async Task OnGetAsync(int? id)
         {     
             var  UserNotes = await FetchNotesByUserID();
+            Message = UserNotes.Count > 0 ? "Welcome to your notes." : "No Notes found :(";
             Notes = UserNotes;
         }
 
         private async Task<List<Note>> FetchNotesByUserID()
         {
             var UserId = User.Claims.FirstOrDefault(c => c.Type == "UserID")?.Value;
-            var NoteList = await _context.Note.AsNoTracking().ToListAsync();
+            var NoteList = await _context.Note.Where(u => u.UserID == UserId).Select(n => n).ToListAsync();
 
             if (NoteList.GetType() == typeof(List<Note>))
             {
