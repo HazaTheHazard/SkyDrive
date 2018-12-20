@@ -14,41 +14,64 @@ namespace SkyDrive.Pages.Private
     {
         public string Message { get; private set; }
 
+        public string DeleteNotifcation { get; private set; }
+
         public List<Note> Notes { get; private set; }
 
         public Note ActiveNote { get; set; }
 
-        private readonly SkyDrive.Models.SkyDriveContext _context;
+        private readonly SkyDriveContext _context;
 
-        public NotesModel(SkyDrive.Models.SkyDriveContext context)
+        public NotesModel(SkyDriveContext context)
         {
             _context = context;
         }
 
-        public async Task OnPostAsync(int id)
-        {
-            var UserNotes = await FetchNotesByUserID();
-            Notes = UserNotes;
-            ActiveNote = Notes[id - 1];
-        }
-
         public async Task OnGetAsync(int? id)
-        {     
-            var  UserNotes = await FetchNotesByUserID();
-            Message = UserNotes.Count > 0 ? "Welcome to your notes." : "No Notes found :(";
-            Notes = UserNotes;
+        {
+            await FetchNotesByUserID(id);
         }
 
-        private async Task<List<Note>> FetchNotesByUserID()
+        public async Task OnPostAsync(int id, int? delete)
         {
-            var UserId = User.Claims.FirstOrDefault(c => c.Type == "UserID")?.Value;
-            var NoteList = await _context.Note.Where(u => u.UserID == UserId).Select(n => n).ToListAsync();
+            if (delete != null) await DeleteActiveNote(delete);
+            await FetchNotesByUserID(id);
+        }
 
-            if (NoteList.GetType() == typeof(List<Note>))
+        private async Task FetchNotesByUserID(int? id)
+        {
+            var userId = User.Claims.FirstOrDefault(c => c.Type == "UserID")?.Value;
+            // TODO: Refactor to return titles
+            Notes = await _context.Note.Where(u => u.UserID == userId).Select(n => n).ToListAsync();
+            Message = Notes.Count > 0 ? "Welcome to your notes." : "No Notes found :(";
+            //
+            if (id != null)
             {
-                return NoteList;
+                ActiveNote = await _context.Note.Where(u => u.UserID == userId && u.ID == id).Select(n => n).FirstOrDefaultAsync();
             }
-            return null;
+        }
+
+        // Change to have a modal for delete rather than H3
+        private async Task DeleteActiveNote(int? id)
+        {
+            var note = await _context.Note
+                             .AsNoTracking()
+                             .FirstOrDefaultAsync(m => m.ID == id);
+            if (note == null)
+            {
+                DeleteNotifcation = "Error Deleting Note :(";
+            }
+
+            try
+            {
+                _context.Note.Remove(note);
+                await _context.SaveChangesAsync();
+                DeleteNotifcation = "Sucessfully Deleted Note :)";
+            }
+            catch (DbUpdateException /* ex */)
+            {
+                throw new System.ArgumentException("Something went wrong", "original");
+            }
         }
     }
 }

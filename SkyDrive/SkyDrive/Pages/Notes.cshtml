@@ -6,15 +6,23 @@
 }
 <h1>@ViewData["Title"]</h1>
 <h2>@Model.Message</h2>
+<h3>@Model.DeleteNotifcation</h3>
 
 @foreach (var item in Model.Notes)
 {
     <form method="post" style="display: inline">
         <input type="hidden" value="@item.ID" name="id" />
-        <input class="btn btn-default" type="submit" value="@item.Title" />
+        <input class="btn btn-info" type="submit" value="@item.Title" />
     </form>
-    }
-@if(Model.ActiveNote != null)
+}
+@if (Model.ActiveNote != null)
+{
+    <form method="post" style="display: inline">
+        <input type="hidden" value="@Model.ActiveNote.ID" name="Delete" />
+        <input class="btn btn-danger" type="submit" value="Delete" />
+    </form>
+}
+@if (Model.ActiveNote != null)
 {
     <div class="jumbotron">
         <h2 class="display-4 text-center">

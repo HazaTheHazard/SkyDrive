@@ -10,7 +10,7 @@ namespace SkyDrive.Data
     {
         public static void Initialize(SkyDriveContext context)
         {
-            if (context.Auth.Any())
+            if (context.Note.Any())
             {
               return;  
             }
