@@ -43,7 +43,7 @@ namespace SkyDrive.Pages.Private
             var userId = User.Claims.FirstOrDefault(c => c.Type == "UserID")?.Value;
             // TODO: Refactor to return titles
             Notes = await _context.Note.Where(u => u.UserID == userId).Select(n => n).ToListAsync();
-            Message = Notes.Count > 0 ? "Welcome to your notes." : "No Notes found :(";
+            Message = Notes.Count > 0 ? "Welcome to your notes." : "No Notes found";
             //
             if (id != null)
             {
@@ -59,14 +59,14 @@ namespace SkyDrive.Pages.Private
                              .FirstOrDefaultAsync(m => m.ID == id);
             if (note == null)
             {
-                DeleteNotifcation = "Error Deleting Note :(";
+                DeleteNotifcation = "Error Deleting Note";
             }
 
             try
             {
                 _context.Note.Remove(note);
                 await _context.SaveChangesAsync();
-                DeleteNotifcation = "Sucessfully Deleted Note :)";
+                DeleteNotifcation = "Sucessfully Deleted Note";
             }
             catch (DbUpdateException /* ex */)
             {

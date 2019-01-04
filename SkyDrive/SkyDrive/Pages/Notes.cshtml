@@ -15,13 +15,17 @@
         <input class="btn btn-info" type="submit" value="@item.Title" />
     </form>
 }
+<a class="btn btn-success" asp-page="/CreateNotes">Create New Note</a>
+
 @if (Model.ActiveNote != null)
 {
+    <a class="btn btn-success" asp-page="/EditNote" asp-route-id="@Model.ActiveNote.ID" >Edit Note</a>
     <form method="post" style="display: inline">
         <input type="hidden" value="@Model.ActiveNote.ID" name="Delete" />
         <input class="btn btn-danger" type="submit" value="Delete" />
     </form>
 }
+
 @if (Model.ActiveNote != null)
 {
     <div class="jumbotron">
@@ -32,7 +36,6 @@
         <p>@Model.ActiveNote.Body</p>
     </div>
 }
-
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

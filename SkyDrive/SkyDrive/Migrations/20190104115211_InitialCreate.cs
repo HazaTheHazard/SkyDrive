@@ -23,6 +23,20 @@ namespace SkyDrive.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "FileMapping",
+                columns: table => new
+                {
+                    ID = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    UserID = table.Column<string>(nullable: true),
+                    File = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_FileMapping", x => x.ID);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Note",
                 columns: table => new
                 {
@@ -42,6 +56,9 @@ namespace SkyDrive.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Auth");
+
+            migrationBuilder.DropTable(
+                name: "FileMapping");
 
             migrationBuilder.DropTable(
                 name: "Note");

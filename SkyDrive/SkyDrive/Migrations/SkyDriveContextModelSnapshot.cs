@@ -35,6 +35,21 @@ namespace SkyDrive.Migrations
                     b.ToTable("Auth");
                 });
 
+            modelBuilder.Entity("SkyDrive.Models.FileMapping", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("File");
+
+                    b.Property<string>("UserID");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("FileMapping");
+                });
+
             modelBuilder.Entity("SkyDrive.Models.Note", b =>
                 {
                     b.Property<int>("ID")

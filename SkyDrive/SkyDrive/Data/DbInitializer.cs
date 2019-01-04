@@ -57,6 +57,7 @@ namespace SkyDrive.Data
                 context.Auth.Add(a);
             }
             context.SaveChanges();
+
         }
     }
 }

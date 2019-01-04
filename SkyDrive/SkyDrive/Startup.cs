@@ -35,6 +35,10 @@ namespace SkyDrive
                 .AddRazorPagesOptions(options =>
                 {
                     options.Conventions.AuthorizePage("/Notes");
+                    options.Conventions.AuthorizePage("/File");
+                    options.Conventions.AuthorizePage("/CreateNote");
+                    options.Conventions.AuthorizePage("/EditNote"); 
+                    options.Conventions.AuthorizePage("/Messenger");
                 })
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
