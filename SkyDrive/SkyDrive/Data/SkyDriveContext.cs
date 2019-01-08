@@ -9,14 +9,14 @@ namespace SkyDrive.Models
         {
         }
 
-        public DbSet<Auth> Auth { get; set; }
+        public DbSet<Account> Account { get; set; }
         public DbSet<Note> Note { get; set; }
         public DbSet<FileMapping> FileMapping { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Auth>().ToTable("Auth");
+            modelBuilder.Entity<Account>().ToTable("Account");
             modelBuilder.Entity<Note>().ToTable("Note");
             modelBuilder.Entity<FileMapping>().ToTable("FileMapping");
         }

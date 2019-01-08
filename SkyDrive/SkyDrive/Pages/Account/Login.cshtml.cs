@@ -76,8 +76,8 @@ namespace SkyDrive.Pages.Account
                 var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, user.Email),
-                    new Claim("UserID", user.ID.ToString()),
-                    new Claim("FullName", user.FullName)
+                    new Claim(ClaimTypes.NameIdentifier, user.UserId),
+                    new Claim("FullName", user.FullName),
                 };
 
                 var claimsIdentity = new ClaimsIdentity(
@@ -93,9 +93,9 @@ namespace SkyDrive.Pages.Account
             return Page();
         }
 
-        private async Task<Auth> LoginByUsernamePasswordMethodAsync(string email, string password)
+        private async Task<Models.Account> LoginByUsernamePasswordMethodAsync(string email, string password)
         {
-            var userProfile = await _context.Auth
+            var userProfile = await _context.Account
                 .AsNoTracking()
                 .FirstOrDefaultAsync(m => m.Email == email && m.Password == password);
 
@@ -106,11 +106,11 @@ namespace SkyDrive.Pages.Account
             else
             {
 
-                return new Auth()
+                return new Models.Account()
                 {
                     Email = userProfile.Email,
                     FullName = userProfile.FullName,
-                    ID = userProfile.ID
+                    UserId = userProfile.UserId
                  };
             }
         }

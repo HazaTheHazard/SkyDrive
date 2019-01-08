@@ -34,11 +34,9 @@ namespace SkyDrive
             services.AddMvc()
                 .AddRazorPagesOptions(options =>
                 {
-                    options.Conventions.AuthorizePage("/Notes");
-                    options.Conventions.AuthorizePage("/File");
-                    options.Conventions.AuthorizePage("/CreateNote");
-                    options.Conventions.AuthorizePage("/EditNote"); 
-                    options.Conventions.AuthorizePage("/Messenger");
+                    options.Conventions.AuthorizeFolder("/Notes");
+                    options.Conventions.AuthorizeFolder("/Files");
+                    options.Conventions.AuthorizeFolder("/Messenger");
                 })
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
@@ -57,7 +55,6 @@ namespace SkyDrive
             app.UseStaticFiles();
             app.UseCookiePolicy();
             app.UseAuthentication();
-
             app.UseMvc();
         }
     }

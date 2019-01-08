@@ -1,0 +1,42 @@
+﻿@page
+@namespace SkyDrive.Pages.Notes
+@model NotesModel
+@{
+    ViewData["Title"] = "Notes";
+}
+<h1>@ViewData["Title"]</h1>
+<h2>@Model.Message</h2>
+<h3>@Model.DeleteNotifcation</h3>
+
+@foreach (var item in Model.Notes)
+{
+<form method="post" style="display: inline">
+    <input type="hidden" value="@item.ID" name="id" />
+    <input class="btn btn-info" type="submit" value="@item.Title" />
+</form>
+}
+<a class="btn btn-success" asp-page="./CreateNotes">Create New Note</a>
+
+@if (Model.ActiveNote != null)
+{
+<a class="btn btn-success" asp-page="./EditNote" asp-route-id="@Model.ActiveNote.ID">Edit Note</a>
+<form method="post" style="display: inline">
+    <input type="hidden" value="@Model.ActiveNote.ID" name="Delete" />
+    <input class="btn btn-danger" type="submit" value="Delete" />
+</form>
+}
+
+@if (Model.ActiveNote != null)
+{
+<div class="jumbotron">
+    <h2 class="display-4 text-center">
+        @Model.ActiveNote.Title
+    </h2>
+    <hr>
+    <p>@Model.ActiveNote.Body</p>
+</div>
+}
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

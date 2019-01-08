@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNet.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using SkyDrive.Models;
 
 
-namespace SkyDrive.Pages.Private
+namespace SkyDrive.Pages.Notes
 {
     public class CreateNotesModel : PageModel
     {
@@ -21,7 +22,7 @@ namespace SkyDrive.Pages.Private
             _context = context;
         }
 
-        public async Task OnGetAsync(int? id)
+        public void OnGet()
         {
         }
 
@@ -34,7 +35,7 @@ namespace SkyDrive.Pages.Private
         {
             var createdNote = new Note
             {
-                UserID = User.Claims.FirstOrDefault(c => c.Type == "UserID")?.Value,
+                UserId = User.Identity.GetUserId(),
                 Title = title,
                 Body = note
             };
@@ -43,7 +44,7 @@ namespace SkyDrive.Pages.Private
             _context.Note.Add(createdNote);
 
             await _context.SaveChangesAsync();
-            Response.Redirect("/Notes");
+            Response.Redirect("/Notes/Notes");
         }
     }
 }

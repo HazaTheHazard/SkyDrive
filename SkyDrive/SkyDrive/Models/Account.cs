@@ -3,9 +3,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SkyDrive.Models
 {
-    public class Auth
+    public class Account
     {
-        public int ID { get; set; }
+        [Key]
+        public string UserId { get; set; }
         public string Email { get; set; }
         public string FullName { get; set; }
         public string Password { get; set; }

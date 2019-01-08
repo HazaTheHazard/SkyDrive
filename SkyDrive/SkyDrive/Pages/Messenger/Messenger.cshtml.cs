@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using SkyDrive.Models;
 
 
-namespace SkyDrive.Pages.Private
+namespace SkyDrive.Pages.Messenger
 {
     public class MessengerModel : PageModel
     {

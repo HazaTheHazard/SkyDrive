@@ -1,7 +1,7 @@
-﻿using SkyDrive.Models;                   // SkyDriveContext
+﻿using SkyDrive.Models;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.DependencyInjection;   // CreateScope
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System;
 using SkyDrive.Data;
