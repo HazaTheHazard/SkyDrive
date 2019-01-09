@@ -15,13 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="Pages\Files\File.cshtml">
-      <Pack>$(IncludeRazorContentInPack)</Pack>
-    </Content>
     <Content Update="Pages\Notes\EditNote.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Pages\Notes\CreateNotes.cshtml">
+    <Content Update="Pages\Notes\Create.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
     <Content Update="Pages\Messenger\Messenger.cshtml">

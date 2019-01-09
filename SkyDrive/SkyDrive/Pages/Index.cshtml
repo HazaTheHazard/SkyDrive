@@ -8,9 +8,9 @@
 {
     <div class="row">
         <div class="jumbotron text-center">
-            <h1 class="display-4">Welcome</h1>
+            <h1 class="display-4">Welcome back</h1>
             <h2 class="display-4">Name: @User.Claims.FirstOrDefault(c => c.Type == "FullName")?.Value</h2>
-            <h2 class="display-4">Username: @User.Identity.Name</h2>
+            <h2 class="display-4">Email: @User.Identity.Name</h2>
         </div>
     </div>
 }

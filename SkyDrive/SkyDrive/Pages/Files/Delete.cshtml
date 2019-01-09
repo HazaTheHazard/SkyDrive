@@ -1,0 +1,29 @@
+﻿@page
+@model SkyDrive.Pages.Files.DeleteModel
+
+<h2>Delete</h2>
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>FileMapping</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FileMapping.File)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FileMapping.File)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FileMapping.Auth)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FileMapping.Auth.Email)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="FileMapping.ID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Home">Back</a>
+    </form>
+</div>

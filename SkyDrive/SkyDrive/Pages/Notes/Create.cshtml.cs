@@ -11,13 +11,13 @@ using SkyDrive.Models;
 
 namespace SkyDrive.Pages.Notes
 {
-    public class CreateNotesModel : PageModel
+    public class CreateModel : PageModel
     {
         public string Message { get; private set; }
 
         private readonly SkyDriveContext _context;
 
-        public CreateNotesModel(SkyDriveContext context)
+        public CreateModel(SkyDriveContext context)
         {
             _context = context;
         }

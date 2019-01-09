@@ -91,7 +91,7 @@ Write(Model.Message);
             WriteLiteral("    ");
             EndContext();
             BeginContext(213, 367, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f1db8a8a811646d4b84801ae7470f1b3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6e7f046358aa4b7598114365d00285e5", async() => {
                 BeginContext(271, 70, true);
                 WriteLiteral("\r\n        <input class=\"form-control\" placeholder=\"Title\" name=\"Title\"");
                 EndContext();
@@ -147,7 +147,7 @@ else
             WriteLiteral("    <!-- Update to read from reponse-->\r\n    <h1> Sucessfuly updated</h1>\r\n    ");
             EndContext();
             BeginContext(673, 55, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dab7ff270a0b4ada8e296aaae7a4f55c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "23988d9d355142ac82936aa8e9416336", async() => {
                 BeginContext(719, 5, true);
                 WriteLiteral("Notes");
                 EndContext();

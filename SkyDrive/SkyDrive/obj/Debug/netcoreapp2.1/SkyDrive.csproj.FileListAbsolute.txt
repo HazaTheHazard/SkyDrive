@@ -27,9 +27,12 @@ C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\SkyDrive.dll
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\SkyDrive.pdb
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\SkyDrive.csproj.CopyComplete
-C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Files\File.g.cshtml.cs
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Messenger\Messenger.g.cshtml.cs
-C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Notes\CreateNotes.g.cshtml.cs
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Notes\EditNote.g.cshtml.cs
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Notes\Notes.g.cshtml.cs
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\_ViewImports.g.cshtml.cs
+C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Account\Create.g.cshtml.cs
+C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Files\Delete.g.cshtml.cs
+C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Files\Upload.g.cshtml.cs
+C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Files\Home.g.cshtml.cs
+C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Notes\Create.g.cshtml.cs
