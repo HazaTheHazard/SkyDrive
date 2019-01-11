@@ -1,0 +1,28 @@
+﻿@page "{id:int}"
+@namespace SkyDrive.Pages.Notes
+@model EditNoteModel
+@{
+    ViewData["Title"] = "Edit Note";
+}
+<h1>@ViewData["Title"]</h1>
+<h2>@Model.Message</h2>
+
+@if (Model.ActiveNote != null)
+{
+    <form method="post" style="display: inline" id="noteForm">
+        <input class="form-control" placeholder="Title" name="Title" value="@Model.ActiveNote.Title" />
+        <textarea class="form-control" rows="3" name="Note" placeholder="Note body">@Model.ActiveNote.Body</textarea>
+        <input class="btn btn-success" type="submit" value="Update" />
+    </form>
+}
+else
+{
+    <!-- Update to read from reponse-->
+    <h1> Sucessfuly updated</h1>
+    <a class="btn btn-success" asp-page="./Notes">Notes</a>
+}
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
