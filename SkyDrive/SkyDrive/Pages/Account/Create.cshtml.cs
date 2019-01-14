@@ -7,8 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using SkyDrive.Models;
 using Microsoft.EntityFrameworkCore;
-
-
+using System.ComponentModel.DataAnnotations;
 
 namespace SkyDrive.Pages.Account
 {

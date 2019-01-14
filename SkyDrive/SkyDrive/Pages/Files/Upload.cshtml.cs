@@ -41,12 +41,12 @@ namespace SkyDrive.Pages.Files
         {
             //ViewData["UserId"] = new SelectList(_context.Account, "UserId", "UserId");
             var userId = User.Identity.GetUserId();
-            var file = Path.Combine(_environment.ContentRootPath, "uploads", FileMapping.FileName);
+            var file = Path.Combine(_environment.ContentRootPath, "uploads", Path.GetFileName(FileMapping.FileName));
 
             var uploadFile = new FileMapping
             {
                 UserId = userId,
-                File = FileMapping.FileName,
+                File = Path.GetFileName(FileMapping.FileName),
             };
             _context.FileMapping.Add(uploadFile);
             await _context.SaveChangesAsync();

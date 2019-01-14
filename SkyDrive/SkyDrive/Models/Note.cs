@@ -6,7 +6,10 @@ namespace SkyDrive.Models
     public class Note
     {
         public int ID { get; set; }
+
+        [Required]
         public string Title { get; set; }
+
         public string Body { get; set; }
 
         [ForeignKey("Auth")]

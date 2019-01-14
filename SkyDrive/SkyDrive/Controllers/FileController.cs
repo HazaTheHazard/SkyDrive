@@ -32,7 +32,7 @@ namespace SkyDrive.Controllers
         {
             var userId = User.Identity.GetUserId();
             var downloadFile = await _context.FileMapping.Where(u => u.UserId == userId && u.ID == id).Select(n => n).FirstOrDefaultAsync();
-            byte[] fileBytes = System.IO.File.ReadAllBytes(Path.Combine(_environment.ContentRootPath, "uploads", downloadFile.File));
+            byte[] fileBytes = System.IO.File.ReadAllBytes(Path.Combine(_environment.ContentRootPath, "uploads", Path.GetFileName(downloadFile.File)));
             string fileName = downloadFile.File;
             return File(fileBytes, System.Net.Mime.MediaTypeNames.Application.Octet, fileName);
         }

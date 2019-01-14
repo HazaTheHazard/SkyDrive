@@ -6,6 +6,8 @@ namespace SkyDrive.Models
     public class FileMapping
     {
         public int ID { get; set; }
+
+        [Required]
         public string File { get; set; }
 
         [ForeignKey("Auth")]
