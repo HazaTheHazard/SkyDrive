@@ -27,24 +27,12 @@ namespace SkyDrive.Pages.Account
             _context = context;
         }
 
-        [BindProperty]
-        public InputModel Input { get; set; }
-
         public string ReturnUrl { get; private set; }
 
-        [TempData]
         public string ErrorMessage { get; set; }
 
-        public class InputModel
-        {
-            [Required]
-            [EmailAddress]
-            public string Email { get; set; }
-
-            [Required]
-            [DataType(DataType.Password)]
-            public string Password { get; set; }
-        }
+        [BindProperty]
+        public Models.Account Account { get; set; }
 
         public async Task OnGetAsync(string returnUrl = null)
         {
@@ -53,7 +41,6 @@ namespace SkyDrive.Pages.Account
                 ModelState.AddModelError(string.Empty, ErrorMessage);
             }
 
-            // Clear the existing external cookie
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
 
             ReturnUrl = returnUrl;
@@ -65,7 +52,7 @@ namespace SkyDrive.Pages.Account
 
             if (ModelState.IsValid)
             {
-                var user = await LoginByUsernamePasswordMethodAsync(Input.Email, Input.Password);
+                var user = await LoginByUsernamePasswordMethodAsync(Account.Email, Account.Password);
 
                 if (user == null)
                 {

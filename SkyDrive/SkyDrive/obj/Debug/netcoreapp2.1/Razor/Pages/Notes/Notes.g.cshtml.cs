@@ -97,7 +97,7 @@ Write(Model.DeleteNotifcation);
 #line default
 #line hidden
             BeginContext(230, 179, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2a2493629deb4fdda129c8a5128d138a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d691a56b1f254a918e9e5a1e16eeb391", async() => {
                 BeginContext(274, 26, true);
                 WriteLiteral("\r\n    <input type=\"hidden\"");
                 EndContext();
@@ -147,7 +147,7 @@ WriteAttributeValue("", 385, item.Title, 385, 11, false);
 #line default
 #line hidden
             BeginContext(414, 68, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ecdd5d986762417ca3aafbd91412047d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "908e6129da344c2ab5fa3e1ded29f7e6", async() => {
                 BeginContext(461, 17, true);
                 WriteLiteral("Create a new Note");
                 EndContext();
@@ -176,7 +176,7 @@ WriteAttributeValue("", 385, item.Title, 385, 11, false);
 #line default
 #line hidden
             BeginContext(521, 98, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "868ef6c4528c41d0a3170810f925236b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b0c79d4e9eca4fd4b7fd40c4ef4841a6", async() => {
                 BeginContext(606, 9, true);
                 WriteLiteral("Edit Note");
                 EndContext();
@@ -212,7 +212,7 @@ WriteAttributeValue("", 385, item.Title, 385, 11, false);
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(621, 192, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ea154fcb71d44c69dfb47d81a9a1fcf", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c358fc588e14cbb93dca4613e0de0f3", async() => {
                 BeginContext(665, 26, true);
                 WriteLiteral("\r\n    <input type=\"hidden\"");
                 EndContext();

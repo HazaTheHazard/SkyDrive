@@ -36,3 +36,4 @@ C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Files\Upload.g.cshtml.cs
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Files\Home.g.cshtml.cs
 C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Notes\Create.g.cshtml.cs
+C:\Users\Matt\Desktop\New folder\SkyDrive\SkyDrive\SkyDrive\obj\Debug\netcoreapp2.1\Razor\Pages\Help.g.cshtml.cs

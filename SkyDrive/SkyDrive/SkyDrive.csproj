@@ -21,9 +21,10 @@
     <Content Update="Pages\Notes\Create.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
-    <Content Update="Pages\Messenger\Messenger.cshtml">
-      <Pack>$(IncludeRazorContentInPack)</Pack>
-    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="uploads\" />
   </ItemGroup>
 
 </Project>

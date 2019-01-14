@@ -58,7 +58,7 @@ using SkyDrive;
             WriteLiteral("\r\n<h2>Files</h2>\r\n\r\n<h4>Upload a File</h4>\r\n");
             EndContext();
             BeginContext(90, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3759f44a215b44d38475dd067db19317", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9739f5a01bd7468a88f97b110f095469", async() => {
                 BeginContext(137, 6, true);
                 WriteLiteral("Upload");
                 EndContext();
@@ -110,7 +110,7 @@ using SkyDrive;
             WriteLiteral("\r\n                </td>\r\n                <td>\r\n                    ");
             EndContext();
             BeginContext(729, 232, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e6d083c3c055402c8b7de2d4725a4c1f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6f7820db9d5e481aa4ea9a23b91ba8b2", async() => {
                 BeginContext(843, 111, true);
                 WriteLiteral("\r\n                        <button type=\"submit\" class=\"btn btn-default\">Download</button>\r\n                    ");
                 EndContext();
@@ -152,7 +152,7 @@ using SkyDrive;
             WriteLiteral("\r\n                    ");
             EndContext();
             BeginContext(983, 105, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9a7ba30a2245409d9fbfb21fc77bff80", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ccd0f00ea8d943e9924c4f41acc6d7a7", async() => {
                 BeginContext(1078, 6, true);
                 WriteLiteral("Delete");
                 EndContext();
@@ -189,7 +189,7 @@ using SkyDrive;
             WriteLiteral("\r\n                </td>\r\n                <td>\r\n                    ");
             EndContext();
             BeginContext(1155, 308, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6a7fca5ad6f941dc992804c8eaf26cd7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6bf69b785d7f404997357742b86d53cb", async() => {
                 BeginContext(1242, 214, true);
                 WriteLiteral("\r\n                        <input class=\"form-check-input\" placeholder=\"SharedEmail\" name=\"SharedEmail\" />\r\n                        <input class=\"btn btn-default\" type=\"submit\" value=\"Share\" />\r\n                    ");
                 EndContext();

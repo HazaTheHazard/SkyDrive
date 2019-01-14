@@ -78,7 +78,7 @@ Write(Model.Message);
             WriteLiteral("</h2>\r\n\r\n\r\n");
             EndContext();
             BeginContext(167, 296, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7f5e31054ce84aa692814e722fad5e7d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9cb9f923f66b436a8983295f032bed1a", async() => {
                 BeginContext(225, 231, true);
                 WriteLiteral("\r\n    <input  class=\"form-control\" placeholder=\"Title\" name=\"Title\" />\r\n    <textarea class=\"form-control\" rows=\"3\" name=\"Note\" placeholder=\"Note body\"></textarea>\r\n    <input class=\"btn btn-success\" type=\"submit\" value=\"Save\" />\r\n");
                 EndContext();
